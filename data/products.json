@@ -1,0 +1,952 @@
+[
+  {
+    "productId": 13,
+    "title": "Classic Dining Table",
+    "description": "Durable and long-lasting",
+    "price": 567,
+    "discountPercent": 35,
+    "image": "dining1.jpg",
+    "carouselImage": ["2", "6"],
+    "category": ["dining", "bedroom", "clocks"],
+    "otherDescription": "Dimensions: 78x138x166",
+    "faqs": [
+      {
+        "title": "What materials is the dining table made of?",
+        "description": "The dining table is made from high-quality solid wood with a durable finish."
+      },
+      {
+        "title": "Is assembly required?",
+        "description": "Yes, the dining table requires simple assembly with instructions included."
+      },
+      {
+        "title": "Can this table accommodate six chairs?",
+        "description": "Yes, the table is spacious enough to accommodate six chairs comfortably."
+      }
+    ]
+  },
+  {
+    "productId": 14,
+    "title": "Elegant Rug",
+    "description": "Durable and long-lasting",
+    "price": 208,
+    "discountPercent": 17,
+    "image": "rug1.jpg",
+    "carouselImage": ["4", "7"],
+    "category": ["clocks", "bedroom", "chairs"],
+    "otherDescription": "Dimensions: 140x97x172",
+    "faqs": [
+      {
+        "title": "Is the rug machine washable?",
+        "description": "No, the rug is recommended for spot cleaning only."
+      },
+      {
+        "title": "What materials are used?",
+        "description": "The rug is made of 100% polyester with a non-slip backing."
+      },
+      {
+        "title": "Is it suitable for high-traffic areas?",
+        "description": "Yes, the rug is designed to withstand high traffic areas in your home."
+      }
+    ]
+  },
+  {
+    "productId": 15,
+    "title": "Modern Sofa",
+    "description": "High-quality and stylish",
+    "price": 232,
+    "discountPercent": 23,
+    "image": "sofa1.jpg",
+    "carouselImage": ["4", "10"],
+    "category": ["decor", "lamps", "chairs"],
+    "otherDescription": "Dimensions: 163x110x154",
+    "faqs": [
+      {
+        "title": "What is the weight capacity of the sofa?",
+        "description": "The sofa can support up to 750 lbs."
+      },
+      {
+        "title": "Are the cushions removable?",
+        "description": "Yes, the cushions are removable and have zippered covers for easy cleaning."
+      },
+      {
+        "title": "What type of fabric is used?",
+        "description": "The sofa is upholstered with a soft, durable linen fabric."
+      }
+    ]
+  },
+  {
+    "productId": 16,
+    "title": "Bookshelf",
+    "description": "Durable and long-lasting",
+    "price": 237,
+    "discountPercent": 36,
+    "image": "bed1.jpg",
+    "carouselImage": ["3", "10"],
+    "category": ["clocks", "sofa"],
+    "otherDescription": "Dimensions: 98x85x187",
+    "faqs": [
+      {
+        "title": "What is the weight capacity of each shelf?",
+        "description": "Each shelf can hold up to 50 lbs."
+      },
+      {
+        "title": "Is the bookshelf wall-mountable?",
+        "description": "Yes, the bookshelf comes with mounting hardware for added stability."
+      },
+      {
+        "title": "What materials is the bookshelf made of?",
+        "description": "The bookshelf is made from engineered wood with a smooth finish."
+      }
+    ]
+  },
+  {
+    "productId": 17,
+    "title": "Bookshelf",
+    "description": "Perfect addition to any room",
+    "price": 818,
+    "discountPercent": 33,
+    "image": "lamp1.jpg",
+    "carouselImage": ["5", "8"],
+    "category": ["bedroom", "chairs"],
+    "otherDescription": "Dimensions: 109x193x171",
+    "faqs": [
+      {
+        "title": "Does the bookshelf require assembly?",
+        "description": "Yes, assembly is required, but all tools are included."
+      },
+      {
+        "title": "Can the shelves be adjusted?",
+        "description": "Yes, the shelves are adjustable to different heights."
+      },
+      {
+        "title": "What is the finish on the bookshelf?",
+        "description": "The bookshelf has a dark walnut finish."
+      }
+    ]
+  },
+  {
+    "productId": 18,
+    "title": "Bookshelf",
+    "description": "High-quality and stylish",
+    "price": 162,
+    "discountPercent": 15,
+    "image": "rug1.jpg",
+    "carouselImage": ["1", "9"],
+    "category": ["rugs", "clocks"],
+    "otherDescription": "Dimensions: 191x88x123",
+    "faqs": [
+      {
+        "title": "Is the bookshelf made of solid wood?",
+        "description": "No, it is made of engineered wood with a veneer finish."
+      },
+      {
+        "title": "What is the maximum height of the bookshelf?",
+        "description": "The bookshelf stands at 191 cm tall."
+      },
+      {
+        "title": "Does it come in different colors?",
+        "description": "Yes, the bookshelf is available in walnut, oak, and white."
+      }
+    ]
+  },
+  {
+    "productId": 19,
+    "title": "Elegant Rug",
+    "description": "Durable and long-lasting",
+    "price": 780,
+    "discountPercent": 37,
+    "image": "clock1.jpg",
+    "carouselImage": ["4", "10"],
+    "category": ["lamps", "decor", "chairs"],
+    "otherDescription": "Dimensions: 108x152x115",
+    "faqs": [
+      {
+        "title": "Is the rug suitable for outdoor use?",
+        "description": "No, this rug is designed for indoor use only."
+      },
+      {
+        "title": "Does the rug shed?",
+        "description": "The rug is designed to be low-shed."
+      },
+      {
+        "title": "Can it be used with underfloor heating?",
+        "description": "Yes, the rug is suitable for use with underfloor heating."
+      }
+    ]
+  },
+  {
+    "productId": 20,
+    "title": "Floor Lamp",
+    "description": "High-quality and stylish",
+    "price": 398,
+    "discountPercent": 39,
+    "image": "table1.jpg",
+    "carouselImage": ["5", "6"],
+    "category": ["decor", "chairs", "tables"],
+    "otherDescription": "Dimensions: 137x109x180",
+    "faqs": [
+      {
+        "title": "What type of bulb does the lamp use?",
+        "description": "The floor lamp uses a standard E27 bulb."
+      },
+      {
+        "title": "Is the lamp height adjustable?",
+        "description": "No, the height is fixed."
+      },
+      {
+        "title": "Does it have a dimmer switch?",
+        "description": "Yes, the lamp includes a dimmer switch for adjustable brightness."
+      }
+    ]
+  },
+  {
+    "productId": 21,
+    "title": "Classic Dining Table",
+    "description": "Durable and long-lasting",
+    "price": 334,
+    "discountPercent": 41,
+    "image": "clock1.jpg",
+    "carouselImage": ["5", "7"],
+    "category": ["clocks", "decor", "tables"],
+    "otherDescription": "Dimensions: 162x111x64",
+    "faqs": [
+      {
+        "title": "How many people can the table seat?",
+        "description": "The table comfortably seats four to six people."
+      },
+      {
+        "title": "Is the table heat resistant?",
+        "description": "Yes, the tabletop is heat resistant to avoid marks from hot dishes."
+      },
+      {
+        "title": "What is the finish of the table?",
+        "description": "The table has a rich walnut finish."
+      }
+    ]
+  },
+  {
+    "productId": 22,
+    "title": "Classic Dining Table",
+    "description": "Perfect addition to any room",
+    "price": 153,
+    "discountPercent": 6,
+    "image": "sofa1.jpg",
+    "carouselImage": ["2", "10"],
+    "category": ["sofa", "bedroom", "clocks"],
+    "otherDescription": "Dimensions: 162x155x69",
+    "faqs": [
+      {
+        "title": "Is the dining table scratch-resistant?",
+        "description": "Yes, the table surface is scratch-resistant."
+      },
+      {
+        "title": "What is the height of the table?",
+        "description": "The table height is 69 cm."
+      },
+      {
+        "title": "Does the table have a warranty?",
+        "description": "Yes, it comes with a 1-year warranty."
+      }
+    ]
+  },
+  {
+    "productId": 23,
+    "title": "Elegant Rug",
+    "description": "Durable and long-lasting",
+    "price": 242,
+    "discountPercent": 47,
+    "image": "dining1.jpg",
+    "carouselImage": ["1", "8"],
+    "category": ["chairs"],
+    "otherDescription": "Dimensions: 124x131x156",
+    "faqs": [
+      {
+        "title": "Can the rug be used on a carpeted floor?",
+        "description": "Yes, it can be placed on top of existing carpet."
+      },
+      {
+        "title": "What is the pile height of the rug?",
+        "description": "The pile height is approximately 1.5 cm."
+      },
+      {
+        "title": "Is the rug stain-resistant?",
+        "description": "Yes, it has a stain-resistant coating for easy cleaning."
+      }
+    ]
+  },
+  {
+    "productId": 24,
+    "title": "Modern Sofa",
+    "description": "High-quality and stylish",
+    "price": 284,
+    "discountPercent": 42,
+    "image": "lamp1.jpg",
+    "carouselImage": ["3", "10"],
+    "category": ["sofa", "clocks"],
+    "otherDescription": "Dimensions: 105x141x171",
+    "faqs": [
+      {
+        "title": "Is the sofa suitable for small spaces?",
+        "description": "Yes, it is designed to fit comfortably in small living spaces."
+      },
+      {
+        "title": "Are the legs of the sofa detachable?",
+        "description": "Yes, the legs are detachable for easy transportation."
+      },
+      {
+        "title": "What type of cushions does it have?",
+        "description": "The sofa comes with high-density foam cushions for extra comfort."
+      }
+    ]
+  },
+  {
+    "productId": 25,
+    "title": "Bookshelf",
+    "description": "Perfect addition to any room",
+    "price": 345,
+    "discountPercent": 40,
+    "image": "sofa1.jpg",
+    "carouselImage": ["3", "7"],
+    "category": ["decor", "dining"],
+    "otherDescription": "Dimensions: 145x156x71",
+    "faqs": [
+      {
+        "title": "Is the bookshelf easy to clean?",
+        "description": "Yes, the bookshelf can be easily wiped clean with a damp cloth."
+      },
+      {
+        "title": "Can the shelves be removed?",
+        "description": "Yes, the shelves are removable."
+      },
+      {
+        "title": "Does the bookshelf come pre-assembled?",
+        "description": "No, some assembly is required."
+      }
+    ]
+  },
+  {
+    "productId": 26,
+    "title": "Bookshelf",
+    "description": "High-quality and stylish",
+    "price": 539,
+    "discountPercent": 25,
+    "image": "lamp2.jpg",
+    "carouselImage": ["2", "7"],
+    "category": ["decor", "dining"],
+    "otherDescription": "Dimensions: 134x138x154",
+    "faqs": [
+      {
+        "title": "Is the bookshelf freestanding?",
+        "description": "Yes, the bookshelf is designed to stand on its own."
+      },
+      {
+        "title": "Does it have adjustable shelves?",
+        "description": "Yes, the shelves are adjustable to various heights."
+      },
+      {
+        "title": "What is the maximum weight capacity?",
+        "description": "The maximum weight capacity is 200 lbs."
+      }
+    ]
+  },
+  {
+    "productId": 27,
+    "title": "Bookshelf",
+    "description": "Perfect addition to any room",
+    "price": 95,
+    "discountPercent": 21,
+    "image": "clock1.jpg",
+    "carouselImage": ["4", "8"],
+    "category": ["tables"],
+    "otherDescription": "Dimensions: 167x92x189",
+    "faqs": [
+      {
+        "title": "Is the bookshelf wall-mounted?",
+        "description": "No, it is a freestanding bookshelf."
+      },
+      {
+        "title": "What material is used?",
+        "description": "The bookshelf is made from MDF with a melamine finish."
+      },
+      {
+        "title": "Is the bookshelf waterproof?",
+        "description": "No, the bookshelf is not waterproof."
+      }
+    ]
+  },
+  {
+    "productId": 28,
+    "title": "Classic Dining Table",
+    "description": "High-quality and stylish",
+    "price": 656,
+    "discountPercent": 28,
+    "image": "sofa1.jpg",
+    "carouselImage": ["4", "6"],
+    "category": ["clocks", "tables"],
+    "otherDescription": "Dimensions: 64x133x152",
+    "faqs": [
+      {
+        "title": "Can the table be used outdoors?",
+        "description": "No, it is designed for indoor use only."
+      },
+      {
+        "title": "What is the table made from?",
+        "description": "The table is crafted from solid oak wood."
+      },
+      {
+        "title": "Is it easy to assemble?",
+        "description": "Yes, the table comes with easy-to-follow instructions."
+      }
+    ]
+  },
+  {
+    "productId": 29,
+    "title": "Bookshelf",
+    "description": "High-quality and stylish",
+    "price": 406,
+    "discountPercent": 28,
+    "image": "clock1.jpg",
+    "carouselImage": ["4", "5"],
+    "category": ["tables"],
+    "otherDescription": "Dimensions: 84x149x157",
+    "faqs": [
+      {
+        "title": "Is the bookshelf suitable for a home office?",
+        "description": "Yes, it is perfect for storing books and office supplies."
+      },
+      {
+        "title": "What color options are available?",
+        "description": "The bookshelf is available in black, white, and oak."
+      },
+      {
+        "title": "Can it be secured to a wall?",
+        "description": "Yes, it comes with brackets for wall mounting."
+      }
+    ]
+  },
+  {
+    "productId": 30,
+    "title": "Bookshelf",
+    "description": "Perfect addition to any room",
+    "price": 546,
+    "discountPercent": 8,
+    "image": "rug1.jpg",
+    "carouselImage": ["5", "10"],
+    "category": ["decor", "clocks"],
+    "otherDescription": "Dimensions: 84x93x135",
+    "faqs": [
+      {
+        "title": "What is the maximum load per shelf?",
+        "description": "Each shelf can hold up to 40 lbs."
+      },
+      {
+        "title": "Does the bookshelf come in different sizes?",
+        "description": "Yes, it is available in various sizes."
+      },
+      {
+        "title": "Is assembly required?",
+        "description": "Yes, but it comes with easy-to-follow instructions."
+      }
+    ]
+  },
+  {
+    "productId": 31,
+    "title": "Bookshelf",
+    "description": "High-quality and stylish",
+    "price": 233,
+    "discountPercent": 20,
+    "image": "dining1.jpg",
+    "carouselImage": ["4", "6"],
+    "category": ["sofa", "clocks"],
+    "otherDescription": "Dimensions: 144x151x173",
+    "faqs": [
+      {
+        "title": "Can the bookshelf be customized?",
+        "description": "Yes, the shelves can be adjusted to suit your needs."
+      },
+      {
+        "title": "Is the finish scratch-resistant?",
+        "description": "Yes, the bookshelf is coated with a scratch-resistant finish."
+      },
+      {
+        "title": "Does it come with a warranty?",
+        "description": "Yes, it includes a 2-year warranty."
+      }
+    ]
+  },
+  {
+    "productId": 32,
+    "title": "Classic Dining Table",
+    "description": "High-quality and stylish",
+    "price": 98,
+    "discountPercent": 43,
+    "image": "lamp2.jpg",
+    "carouselImage": ["2", "7"],
+    "category": ["clocks", "tables"],
+    "otherDescription": "Dimensions: 82x137x138",
+    "faqs": [
+      {
+        "title": "How many chairs can fit around the table?",
+        "description": "The table can comfortably fit four chairs."
+      },
+      {
+        "title": "Is the table foldable?",
+        "description": "No, the table is not foldable."
+      },
+      {
+        "title": "What is the finish on the table?",
+        "description": "It has a glossy lacquer finish."
+      }
+    ]
+  },
+  {
+    "productId": 33,
+    "title": "Classic Dining Table",
+    "description": "Durable and long-lasting",
+    "price": 469,
+    "discountPercent": 48,
+    "image": "clock1.jpg",
+    "carouselImage": ["1", "5"],
+    "category": ["tables", "decor"],
+    "otherDescription": "Dimensions: 61x101x165",
+    "faqs": [
+      {
+        "title": "Can the table be extended?",
+        "description": "No, the table does not have an extendable option."
+      },
+      {
+        "title": "What materials are used?",
+        "description": "The table is made of engineered wood with a veneer finish."
+      },
+      {
+        "title": "Is it easy to clean?",
+        "description": "Yes, the table can be wiped clean with a damp cloth."
+      }
+    ]
+  },
+  {
+    "productId": 34,
+    "title": "Office Chair",
+    "description": "Perfect addition to any room",
+    "price": 120,
+    "discountPercent": 30,
+    "image": "bed1.jpg",
+    "carouselImage": ["1", "9"],
+    "category": ["chairs", "tables"],
+    "otherDescription": "Dimensions: 148x87x61",
+    "faqs": [
+      {
+        "title": "Is the chair height adjustable?",
+        "description": "Yes, the chair height can be adjusted."
+      },
+      {
+        "title": "Does it have lumbar support?",
+        "description": "Yes, it comes with built-in lumbar support."
+      },
+      {
+        "title": "Is the seat cushion removable?",
+        "description": "Yes, the seat cushion is removable for easy cleaning."
+      }
+    ]
+  },
+  {
+    "productId": 35,
+    "title": "Office Chair",
+    "description": "Durable and long-lasting",
+    "price": 664,
+    "discountPercent": 24,
+    "image": "table1.jpg",
+    "carouselImage": ["2", "6"],
+    "category": ["decor", "tables"],
+    "otherDescription": "Dimensions: 97x151x152",
+    "faqs": [
+      {
+        "title": "Is the chair ergonomic?",
+        "description": "Yes, it is designed for ergonomic comfort."
+      },
+      {
+        "title": "What materials are used?",
+        "description": "The chair is made of breathable mesh and steel frame."
+      },
+      {
+        "title": "Can the armrests be adjusted?",
+        "description": "Yes, the armrests are adjustable."
+      }
+    ]
+  },
+  {
+    "productId": 36,
+    "title": "Office Chair",
+    "description": "Durable and long-lasting",
+    "price": 133,
+    "discountPercent": 41,
+    "image": "sofa1.jpg",
+    "carouselImage": ["2", "10"],
+    "category": ["sofa", "clocks"],
+    "otherDescription": "Dimensions: 139x63x148",
+    "faqs": [
+      {
+        "title": "Does the chair come with a warranty?",
+        "description": "Yes, it comes with a 2-year warranty."
+      },
+      {
+        "title": "Is the chair suitable for long hours of use?",
+        "description": "Yes, it is designed for extended periods of sitting."
+      },
+      {
+        "title": "Can the chair recline?",
+        "description": "Yes, the chair has a reclining function."
+      }
+    ]
+  },
+  {
+    "productId": 37,
+    "title": "Bookshelf",
+    "description": "High-quality and stylish",
+    "price": 562,
+    "discountPercent": 10,
+    "image": "lamp2.jpg",
+    "carouselImage": ["3", "9"],
+    "category": ["decor", "tables"],
+    "otherDescription": "Dimensions: 152x134x90",
+    "faqs": [
+      {
+        "title": "Does the bookshelf come with anchors?",
+        "description": "Yes, it includes anchors for wall mounting."
+      },
+      {
+        "title": "Is it easy to assemble?",
+        "description": "Yes, the bookshelf can be assembled in under an hour."
+      },
+      {
+        "title": "What colors are available?",
+        "description": "It is available in white, black, and brown."
+      }
+    ]
+  },
+  {
+    "productId": 38,
+    "title": "Classic Dining Table",
+    "description": "Durable and long-lasting",
+    "price": 223,
+    "discountPercent": 22,
+    "image": "rug1.jpg",
+    "carouselImage": ["5", "7"],
+    "category": ["rugs", "clocks"],
+    "otherDescription": "Dimensions: 148x167x89",
+    "faqs": [
+      {
+        "title": "Can the table be used as a desk?",
+        "description": "Yes, it can be used as a desk in a home office."
+      },
+      {
+        "title": "Does the table have a smooth finish?",
+        "description": "Yes, the surface is smooth and easy to clean."
+      },
+      {
+        "title": "Is it available in different sizes?",
+        "description": "No, this model is available in one size only."
+      }
+    ]
+  },
+  {
+    "productId": 39,
+    "title": "Bookshelf",
+    "description": "Perfect addition to any room",
+    "price": 337,
+    "discountPercent": 32,
+    "image": "table1.jpg",
+    "carouselImage": ["1", "8"],
+    "category": ["sofa", "clocks"],
+    "otherDescription": "Dimensions: 130x177x66",
+    "faqs": [
+      {
+        "title": "What is the material of the bookshelf?",
+        "description": "The bookshelf is made from particle board with a laminate finish."
+      },
+      {
+        "title": "Is it suitable for storing heavy items?",
+        "description": "Yes, the bookshelf can store heavy items such as books and decor."
+      },
+      {
+        "title": "Can the bookshelf be customized?",
+        "description": "Yes, the shelves can be adjusted to your preference."
+      }
+    ]
+  },
+  {
+    "productId": 40,
+    "title": "Bookshelf",
+    "description": "Perfect addition to any room",
+    "price": 562,
+    "discountPercent": 30,
+    "image": "bed1.jpg",
+    "carouselImage": ["5", "9"],
+    "category": ["sofa", "dining"],
+    "otherDescription": "Dimensions: 102x159x162",
+    "faqs": [
+      {
+        "title": "Does the bookshelf have adjustable shelves?",
+        "description": "Yes, the shelves are adjustable to different heights."
+      },
+      {
+        "title": "Is it sturdy?",
+        "description": "Yes, the bookshelf is designed to be sturdy and durable."
+      },
+      {
+        "title": "What is the finish of the bookshelf?",
+        "description": "It has a matte finish."
+      }
+    ]
+  },
+  {
+    "productId": 41,
+    "title": "Elegant Rug",
+    "description": "Durable and long-lasting",
+    "price": 566,
+    "discountPercent": 28,
+    "image": "rug1.jpg",
+    "carouselImage": ["3", "10"],
+    "category": ["sofa", "dining"],
+    "otherDescription": "Dimensions: 123x189x127",
+    "faqs": [
+      {
+        "title": "Is the rug easy to clean?",
+        "description": "Yes, it is machine washable."
+      },
+      {
+        "title": "Does it have a non-slip backing?",
+        "description": "Yes, the rug features a non-slip backing."
+      },
+      {
+        "title": "What materials is the rug made from?",
+        "description": "The rug is made from 100% polyester."
+      }
+    ]
+  },
+  {
+    "productId": 42,
+    "title": "Bookshelf",
+    "description": "Durable and long-lasting",
+    "price": 561,
+    "discountPercent": 36,
+    "image": "lamp1.jpg",
+    "carouselImage": ["1", "8"],
+    "category": ["lamps", "decor"],
+    "otherDescription": "Dimensions: 175x151x108",
+    "faqs": [
+      {
+        "title": "Is the bookshelf suitable for small spaces?",
+        "description": "Yes, it is compact and perfect for small rooms."
+      },
+      {
+        "title": "Is assembly difficult?",
+        "description": "No, the bookshelf comes with easy-to-follow assembly instructions."
+      },
+      {
+        "title": "Does it have a modern design?",
+        "description": "Yes, it features a sleek, modern design."
+      }
+    ]
+  },
+  {
+    "productId": 43,
+    "title": "Classic Dining Table",
+    "description": "Perfect addition to any room",
+    "price": 134,
+    "discountPercent": 16,
+    "image": "sofa1.jpg",
+    "carouselImage": ["3", "7"],
+    "category": ["clocks", "decor"],
+    "otherDescription": "Dimensions: 110x156x97",
+    "faqs": [
+      {
+        "title": "Is the dining table heavy?",
+        "description": "No, it is lightweight and easy to move."
+      },
+      {
+        "title": "Does it have a smooth finish?",
+        "description": "Yes, the table has a smooth, glossy finish."
+      },
+      {
+        "title": "Is it available in different colors?",
+        "description": "Yes, it is available in black, white, and oak."
+      }
+    ]
+  },
+  {
+    "productId": 44,
+    "title": "Bookshelf",
+    "description": "Perfect addition to any room",
+    "price": 645,
+    "discountPercent": 22,
+    "image": "dining1.jpg",
+    "carouselImage": ["2", "6"],
+    "category": ["decor", "clocks"],
+    "otherDescription": "Dimensions: 90x123x137",
+    "faqs": [
+      {
+        "title": "Is the bookshelf made of solid wood?",
+        "description": "No, it is made of engineered wood with a veneer finish."
+      },
+      {
+        "title": "Does it require assembly?",
+        "description": "Yes, assembly is required."
+      },
+      {
+        "title": "What is the height of the bookshelf?",
+        "description": "The bookshelf is 123 cm tall."
+      }
+    ]
+  },
+  {
+    "productId": 45,
+    "title": "Bookshelf",
+    "description": "High-quality and stylish",
+    "price": 323,
+    "discountPercent": 34,
+    "image": "rug1.jpg",
+    "carouselImage": ["2", "8"],
+    "category": ["rugs", "dining"],
+    "otherDescription": "Dimensions: 98x135x182",
+    "faqs": [
+      {
+        "title": "Can the bookshelf be mounted on a wall?",
+        "description": "Yes, it comes with brackets for wall mounting."
+      },
+      {
+        "title": "Does the bookshelf have adjustable shelves?",
+        "description": "Yes, the shelves can be adjusted to different heights."
+      },
+      {
+        "title": "What is the weight of the bookshelf?",
+        "description": "The bookshelf weighs approximately 50 lbs."
+      }
+    ]
+  },
+  {
+    "productId": 46,
+    "title": "Classic Dining Table",
+    "description": "Durable and long-lasting",
+    "price": 186,
+    "discountPercent": 36,
+    "image": "clock1.jpg",
+    "carouselImage": ["3", "9"],
+    "category": ["dining", "decor"],
+    "otherDescription": "Dimensions: 150x130x71",
+    "faqs": [
+      {
+        "title": "Does the table have a sturdy construction?",
+        "description": "Yes, the table is built with a solid frame for stability."
+      },
+      {
+        "title": "Is it resistant to scratches?",
+        "description": "Yes, the surface is scratch-resistant."
+      },
+      {
+        "title": "Does the table come with a warranty?",
+        "description": "Yes, it includes a 1-year warranty."
+      }
+    ]
+  },
+  {
+    "productId": 47,
+    "title": "Bookshelf",
+    "description": "Durable and long-lasting",
+    "price": 183,
+    "discountPercent": 37,
+    "image": "lamp2.jpg",
+    "carouselImage": ["3", "6"],
+    "category": ["lamps", "decor"],
+    "otherDescription": "Dimensions: 67x175x166",
+    "faqs": [
+      {
+        "title": "Is the bookshelf suitable for children's rooms?",
+        "description": "Yes, it is designed to be child-friendly with rounded edges."
+      },
+      {
+        "title": "Does it have a contemporary design?",
+        "description": "Yes, it features a modern and sleek design."
+      },
+      {
+        "title": "Is the bookshelf heavy?",
+        "description": "No, it is lightweight and easy to move."
+      }
+    ]
+  },
+  {
+    "productId": 48,
+    "title": "Classic Dining Table",
+    "description": "Durable and long-lasting",
+    "price": 599,
+    "discountPercent": 15,
+    "image": "lamp1.jpg",
+    "carouselImage": ["5", "9"],
+    "category": ["tables", "decor"],
+    "otherDescription": "Dimensions: 141x84x128",
+    "faqs": [
+      {
+        "title": "Can the table be disassembled for storage?",
+        "description": "Yes, the table can be easily disassembled."
+      },
+      {
+        "title": "What is the table's weight?",
+        "description": "The table weighs approximately 60 lbs."
+      },
+      {
+        "title": "Does the table have a matte finish?",
+        "description": "Yes, the table has a matte finish."
+      }
+    ]
+  },
+  {
+    "productId": 49,
+    "title": "Office Chair",
+    "description": "Durable and long-lasting",
+    "price": 300,
+    "discountPercent": 35,
+    "image": "lamp2.jpg",
+    "carouselImage": ["1", "6"],
+    "category": ["sofa", "dining"],
+    "otherDescription": "Dimensions: 94x147x127",
+    "faqs": [
+      {
+        "title": "Does the chair have a swivel function?",
+        "description": "Yes, the chair can swivel 360 degrees."
+      },
+      {
+        "title": "Is the seat cushioned?",
+        "description": "Yes, the seat is padded for extra comfort."
+      },
+      {
+        "title": "Does the chair have adjustable armrests?",
+        "description": "Yes, the armrests are fully adjustable."
+      }
+    ]
+  },
+  {
+    "productId": 50,
+    "title": "Classic Dining Table",
+    "description": "Perfect addition to any room",
+    "price": 570,
+    "discountPercent": 25,
+    "image": "rug1.jpg",
+    "carouselImage": ["4", "6"],
+    "category": ["rugs", "clocks"],
+    "otherDescription": "Dimensions: 147x91x80",
+    "faqs": [
+      {
+        "title": "Can the table be extended?",
+        "description": "No, the table does not have an extendable option."
+      },
+      {
+        "title": "What materials are used?",
+        "description": "The table is made of solid pine wood."
+      },
+      {
+        "title": "Is it easy to clean?",
+        "description": "Yes, the table can be wiped clean with a damp cloth."
+      }
+    ]
+  }
+]

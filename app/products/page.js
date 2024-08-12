@@ -1,10 +1,10 @@
-import productBanner from '../../../public/static/images/product-banner-lg.png';
-import productBannerSm from '../../../public/static/images/product-banner-sm.png';
-import rating from '../../../public/static/images/rating.png';
-import image1 from '../../../public/static/images/new-arrival-1.png';
-import lampImg1 from '../../../public/static/images/product-lamp.png';
-import lampImg2 from '../../../public/static/images/product-lamp-2.png';
-import toasterImg from '../../../public/static/images/product-toaster.png';
+import productBanner from '../../public/static/images/product-banner-lg.png';
+import productBannerSm from '../../public/static/images/product-banner-sm.png';
+import rating from '../../public/static/images/rating.png';
+import image1 from '../../public/static/images/new-arrival-1.png';
+import lampImg1 from '../../public/static/images/product-lamp.png';
+import lampImg2 from '../../public/static/images/product-lamp-2.png';
+import toasterImg from '../../public/static/images/product-toaster.png';
 
 const categoryPage = () => {
   return (
