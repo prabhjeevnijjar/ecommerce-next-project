@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Dining",
+    "value": "dining"
+  },
+  {
+    "name": "Bedroom",
+    "value": "bedroom"
+  },
+  {
+    "name": "Clocks",
+    "value": "clocks"
+  },
+  {
+    "name": "Chairs",
+    "value": "chairs"
+  },
+  {
+    "name": "Lamps",
+    "value": "lamps"
+  },
+  {
+    "name": "Decor",
+    "value": "decor"
+  },
+  {
+    "name": "Sofa",
+    "value": "sofa"
+  },
+  {
+    "name": "Rugs",
+    "value": "rigs"
+  }
+]
