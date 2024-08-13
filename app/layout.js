@@ -4,18 +4,30 @@ import Header from './components/common/Header';
 import Footer from './components/common/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
-const space_grotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-space-grotesk', display: 'swap', weight: '500' });
-const poppins = Poppins({ subsets: ['latin'], variable: '--font-poppins', display: 'swap', weight: '500' });
+const space_grotesk = Space_Grotesk({
+  subsets: ['latin'],
+  variable: '--font-space-grotesk',
+  display: 'swap',
+  weight: '500',
+});
+const poppins = Poppins({
+  subsets: ['latin'],
+  variable: '--font-poppins',
+  display: 'swap',
+  weight: '500',
+});
 
 export const metadata = {
-  title: 'Crypto homepage',
-  description: 'crypto whitepaper',
+  title: 'Ecommerce homepage',
+  description: 'Ecommerce products home decor',
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${space_grotesk.variable} ${poppins.variable}`}>
+      <body
+        className={`${inter.className} ${space_grotesk.variable} ${poppins.variable}`}
+      >
         <Header />
         {children}
         <Footer />
