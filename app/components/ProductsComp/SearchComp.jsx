@@ -4,6 +4,8 @@ import categories from '@/data/categories.json';
 import toasterImg from '@/public/static/images/product-toaster.png';
 import { calcDiscount } from '@/lib/utils';
 import { Slider } from '@/components/ui/slider';
+import Link from 'next/link';
+import AddToCart from '../productComp/AddToCart';
 
 const Search = ({ data }) => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -113,9 +115,9 @@ const Search = ({ data }) => {
               className="flex flex-col items-center sm:items-start sm:w-[200px] lg:w-[250px] w-[300px] mx-auto"
               key={index}
             >
-              <div className="flex justify-center w-full">
+              <Link href={`/product/${encodeURIComponent(item.slug)}`} className="flex justify-center w-full">
                 <img src={toasterImg.src} alt="image" loading="lazy" />
-              </div>
+              </Link>
               <div className="mt-2 font-inter font-semibold">{item.title}</div>
               <div className="w-full flex gap-4  mt-3 align-center items-center justify-between">
                 <div className=''>
@@ -133,7 +135,7 @@ const Search = ({ data }) => {
                   ) : null}
                   </span>
                 </div>
-                <button className="text-[0.75rem] px-4 py-1 font-inter transition ease-in duration-200 uppercase rounded-full hover:bg-gray-800 hover:text-white border-2 border-gray-900 focus:outline-none">
+                {/* <button className="text-[0.75rem] px-4 py-1 font-inter transition ease-in duration-200 uppercase rounded-full hover:bg-gray-800 hover:text-white border-2 border-gray-900 focus:outline-none">
                   Add
                 </button>
                 <span className="gap-3 text-[0.75rem] font-inter  uppercase border-gray-900 ">
@@ -144,7 +146,8 @@ const Search = ({ data }) => {
                   <span className="rounded-full border-2 border-gray-900 px-2 py-1  transition ease-in duration-200 hover:bg-gray-800 hover:text-white focus:outline-none ">
                     +
                   </span>
-                </span>
+                </span> */}
+                <AddToCart />
               </div>
             </div>
           ))}
