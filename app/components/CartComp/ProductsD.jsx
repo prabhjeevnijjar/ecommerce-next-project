@@ -14,6 +14,7 @@ import { calcDiscount } from '@/lib/utils';
 import AddToCart from '../ProductComp/AddToCart';
 import { useCartAnimation } from '@/app/hooks/useCartAnimation';
 import CartAnimation from '../common/Animations/CartAnimation';
+import Link from 'next/link';
 
 const ProductsD = () => {
   const { state } = useCart();
@@ -22,7 +23,9 @@ const ProductsD = () => {
   return (
     <div className="md:block hidden">
       <Table>
-        <TableCaption>{state.items?.length ? "Cart Items": "Cart empty"}</TableCaption>
+        <TableCaption>
+          {state.items?.length ? 'Cart Items' : 'Cart empty'}
+        </TableCaption>
         <TableHeader>
           <TableRow>
             <TableHead className="w-[100px]">Product</TableHead>
@@ -37,7 +40,7 @@ const ProductsD = () => {
             return (
               <TableRow key={index}>
                 <TableCell className="font-medium flex gap-2 ">
-                  <div class="w-38 h-38">
+                  <div className="w-38 h-38">
                     <img
                       src={item.image}
                       alt="product img"
@@ -45,7 +48,12 @@ const ProductsD = () => {
                     />
                   </div>
                   <div className="flex flex-col gap-4">
-                    <div className="font-semibold font-md">{item.title}</div>
+                    <Link
+                      href={`/product/${encodeURIComponent(item.slug)}`}
+                      className="font-semibold font-md"
+                    >
+                      {item.title}
+                    </Link>
                     <button
                       className="font-sm flex flex-row text-gray-500 font-semibold cursor-pointer items-center"
                       onClick={() => deleteItemFromCart({ id: item.id })}
@@ -73,12 +81,42 @@ const ProductsD = () => {
                 <TableCell>
                   <AddToCart data={item} />
                 </TableCell>
-                <TableCell className="text-right">${item.price}</TableCell>
-                <TableCell className="text-right font-semibold">
-                  {
-                    calcDiscount(item.price, item.discountPercent || 0)
-                      .discountedPrice
-                  }
+                <TableCell className="text-right">
+                  <div className="">
+                    <span className="sm:text-[1.1rem] font-inter mr-1">
+                      $
+                      {
+                        calcDiscount(item.price, item.discountPercent || 0)
+                          .discountedPrice
+                      }
+                    </span>
+                    <span>
+                      {item.discountPercent ? (
+                        <s className="text-neutralDark font-inter text-[0.75rem]">
+                          ${item.price}
+                        </s>
+                      ) : null}
+                    </span>
+                  </div>
+                </TableCell>
+                <TableCell className="text-right font-semibold flex flex-col py-0 gap-4 align-bottom px-0">
+                  <div className="flex flex-row justify-end">
+                    {item.discountPercent ? (
+                      <div className="border-white bg-green-500 text-white rounded-md px-1 py-1 text-center w-[80px] text-sm">
+                        {item.discountPercent}% OFF
+                      </div>
+                    ) : null}
+                  </div>
+                  <span className=" text-[1.11rem]">
+                    $
+                    {
+                      calcDiscount(
+                        item.price,
+                        item.discountPercent || 0,
+                        item.quantity
+                      ).discountedPricexQty
+                    }
+                  </span>
                 </TableCell>
               </TableRow>
             );

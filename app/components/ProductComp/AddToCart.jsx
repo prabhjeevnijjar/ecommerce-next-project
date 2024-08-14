@@ -19,6 +19,8 @@ const AddToCart = ({ data }) => {
     title: data.title,
     price: data.price,
     image: data.image,
+    slug: data.slug,
+    discountPercent: data.discountPercent
   };
 
   const increaseQuantity = () => {

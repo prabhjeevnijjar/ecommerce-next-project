@@ -28,6 +28,7 @@ Ecommerce application with exceptional UI
 - IIFE
 - Custom hook [Add, Delete Cart Animation]
 - Compound Pattern for Animations
+- map() filter() reduce() Patterns
 ---
 
 ## Demo

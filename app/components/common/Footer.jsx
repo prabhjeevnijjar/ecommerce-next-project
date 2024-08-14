@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import brandLogo from '../../../public/static/images/white-logo.png';
 
 const Footer = () => {
@@ -7,18 +8,26 @@ const Footer = () => {
         <div className="flex gap-8">
           <img src={brandLogo.src}></img>
           <span className="text-neutralDark">|</span>
-          <div className="text-[0.75rem] font-inter font-normal flex items-center">Gift & Decoration store</div>
+          <div className="text-[0.75rem] font-inter font-normal flex items-center">
+            Gift & Decoration store
+          </div>
         </div>
         <ul className="flex gap-2 lg:gap-6 font-inter text-[0.75rem] sm:text-base text-white ">
-          <li className="cursor-pointer ">Home</li>
+          <Link href="/">
+            <li className="cursor-pointer ">Home</li>
+          </Link>
           <li className="cursor-pointer">Shop</li>
-          <li className="cursor-pointer">Products</li>
+          <Link href="/products>">
+            <li className="cursor-pointer">Products</li>
+          </Link>
           <li className="sm:block hidden cursor-pointer">Contact</li>
         </ul>
       </div>
       <div className="mt-10">
         <ul className="flex gap-2 lg:gap-6 font-inter text-[0.75rem] text-white ">
-          <li className="cursor-pointer ">Copyright @2024 | Singhularity labs</li>
+          <li className="cursor-pointer ">
+            Copyright @2024 | Singhularity labs | Prabhjeev Singh
+          </li>
 
           <li className="cursor-pointer ">Privacy</li>
           <li className="cursor-pointer">Terms of use</li>

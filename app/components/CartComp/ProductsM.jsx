@@ -4,6 +4,7 @@ import { useCartAnimation } from '@/app/hooks/useCartAnimation';
 import React from 'react';
 import AddToCart from '../ProductComp/AddToCart';
 import CartAnimation from '../common/Animations/CartAnimation';
+import { calcDiscount } from '@/lib/utils';
 
 const ProductsM = () => {
   const { state } = useCart();
@@ -19,7 +20,7 @@ const ProductsM = () => {
         return (
           <div className="flex flex-row justify-between px-2 py-4" key={index}>
             <div className="flex flex-row gap-4">
-              <div class="w-38 h-38">
+              <div className="w-38 h-38">
                 <img
                   src={item.image}
                   alt="product img"
@@ -32,7 +33,25 @@ const ProductsM = () => {
               </div>
             </div>
             <div className="flex flex-col gap-4">
-              <span className="font-semibold">$100</span>
+              <div className="flex flex-row justify-end">
+                {item.discountPercent ? (
+                  <div className="border-white bg-green-500 text-white rounded-md px-1 py-1 text-center w-[80px] text-sm">
+                    {item.discountPercent}% OFF
+                  </div>
+                ) : null}
+              </div>
+              <span className="font-semibold">
+                <span className=" text-[1.11rem]">
+                  $
+                  {
+                    calcDiscount(
+                      item.price,
+                      item.discountPercent || 0,
+                      item.quantity
+                    ).discountedPricexQty
+                  }
+                </span>
+              </span>
               <button
                 className="font-sm flex flex-row text-gray-500 font-semibold cursor-pointer items-center"
                 onClick={() => deleteItemFromCart({ id: item.id })}
