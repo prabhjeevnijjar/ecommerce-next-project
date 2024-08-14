@@ -1,6 +1,8 @@
 import React from 'react';
 import ProductsD from '../components/CartComp/ProductsD';
 import ProductsM from '../components/CartComp/ProductsM';
+import Summary from '../components/CartComp/Summary';
+import ApplyCoupon from '../components/CartComp/ApplyCoupon';
 
 const CartPage = () => {
   return (
@@ -8,13 +10,16 @@ const CartPage = () => {
       <div className="flex flex-col font-poppins text-[2.25rem] lg:text-[3.37rem] text-center font-medium mt-6 sm:mt-10">
         <span className="leading-[44px]">Cart</span>
       </div>
-      <div className="flex mt-6">
-        <div className="w-2/3 ">
+      <div className="flex flex-col lg:flex-row mt-6 gap-8">
+        <div className="w-full lg:w-2/3 ">
           <ProductsD />
           <ProductsM />
         </div>
-        <div className="w-1/3 ">Content for the second section</div>
+        <div className="w-full lg:w-1/3">
+          <Summary />
+        </div>
       </div>
+      <ApplyCoupon />
     </div>
   );
 };

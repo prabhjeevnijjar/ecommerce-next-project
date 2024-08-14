@@ -18,11 +18,11 @@ import CartAnimation from '../common/Animations/CartAnimation';
 const ProductsD = () => {
   const { state } = useCart();
   const { deleteItemFromCart, isDeleted } = useCartAnimation();
-  console.log(state);
+
   return (
     <div className="md:block hidden">
       <Table>
-        <TableCaption>Cart Items</TableCaption>
+        <TableCaption>{state.items?.length ? "Cart Items": "Cart empty"}</TableCaption>
         <TableHeader>
           <TableRow>
             <TableHead className="w-[100px]">Product</TableHead>
@@ -41,7 +41,7 @@ const ProductsD = () => {
                     <img
                       src={item.image}
                       alt="product img"
-                      class="w-full h-full object-cover rounded-lg"
+                      className="w-full h-full object-cover rounded-lg"
                     />
                   </div>
                   <div className="flex flex-col gap-4">
