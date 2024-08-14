@@ -27,6 +27,7 @@ Ecommerce application with exceptional UI
 - Dynamic Routing
 - IIFE
 - Custom hook [Add, Delete Cart Animation]
+- Compound Pattern for Animations
 ---
 
 ## Demo

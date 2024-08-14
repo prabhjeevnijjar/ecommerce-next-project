@@ -3,13 +3,9 @@ import React from 'react';
 import add from '../../../public/static/images/Add.png';
 import minus from '../../../public/static/images/Minus.png';
 import { useCart } from '../../context/CartContext';
-import {
-  ADD_ITEM,
-  DECREASE_QUANTITY,
-  INCREASE_QUANTITY,
-  REMOVE_ITEM,
-} from '@/app/context/actions';
+import { DECREASE_QUANTITY, INCREASE_QUANTITY } from '@/app/context/actions';
 import { useCartAnimation } from '@/app/hooks/useCartAnimation';
+import CartAnimation from '../common/Animations/CartAnimation';
 
 const AddToCart = ({ data }) => {
   const { state, dispatch } = useCart();
@@ -18,7 +14,12 @@ const AddToCart = ({ data }) => {
     useCartAnimation();
 
   const item = state.items.find((item) => item.id === data.productId);
-  const product = { id: data.productId, title: data.title, price: data.price };
+  const product = {
+    id: data.productId,
+    title: data.title,
+    price: data.price,
+    image: data.image,
+  };
 
   const increaseQuantity = () => {
     if (item?.quantity <= 10 - 1)
@@ -56,16 +57,8 @@ const AddToCart = ({ data }) => {
           Add
         </button>
       )}
-      {isAdded && (
-        <div className="absolute top-0 left-0 w-full bg-green-500 text-white py-2 px-4 text-center animate-slide-in">
-          Item added to cart!
-        </div>
-      )}
-      {isDeleted && (
-        <div className="absolute top-0 left-0 w-full bg-red-500 text-white py-2 px-4 text-center animate-fade-out">
-          Item removed from cart!
-        </div>
-      )}
+      {isAdded && <CartAnimation.AddAnimation />}
+      {isDeleted && <CartAnimation.DeleteAnimation />}
     </div>
   );
 };
