@@ -1,6 +1,23 @@
-import React from 'react';
-
+'use client';
+import React, { useState } from 'react';
+import coupons from '../../../data/coupons.json';
+import { useCartCalculations } from '@/app/hooks/useCartCalculations';
 const ApplyCoupon = () => {
+  const { setCouponDiscount } = useCartCalculations();
+  const [value, setValue] = useState('');
+  const onChangeHandler = (event) => {
+    setValue(event.target.value);
+  };
+  const onSubmitHandler = () => {
+    const isFound = coupons.filter(
+      (item) => item.couponName.toLowerCase() === value.toLowerCase()
+    )[0];
+    if(isFound) {
+      setCouponDiscount(isFound)
+    }
+    console.log({ isFound });
+  };
+  console.log({ value });
   return (
     <div className="w-full lg:w-2/3 my-12 mx-2">
       <div className="font-medium text-[1.25rem] leading-7 font-poppins mb-2">
@@ -12,7 +29,7 @@ const ApplyCoupon = () => {
       <div className="flex items-center justify-between border border-gray-300 rounded-lg p-2 max-w-full">
         <div className="flex items-center w-2/3">
           <svg
-          className='hidden sm:flex'
+            className="hidden sm:flex"
             width="24"
             height="25"
             viewBox="0 0 24 25"
@@ -26,13 +43,18 @@ const ApplyCoupon = () => {
           </svg>
 
           <input
+            value={value}
             type="text"
             placeholder="Coupon Code"
             className="px-2 py-1 text-gray-600 border-none focus:outline-none w-100"
+            onChange={onChangeHandler}
           />
         </div>
 
-        <button className="text-black font-medium focus:outline-none">
+        <button
+          className="text-black font-medium focus:outline-none"
+          onClick={onSubmitHandler}
+        >
           Apply
         </button>
       </div>

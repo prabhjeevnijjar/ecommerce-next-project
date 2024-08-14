@@ -7,9 +7,14 @@ export const useCartCalculations = () => {
   console.log('=====', state.items);
   const [cartTotal, setCartTotal] = useState(0);
   const [totalDiscount, setTotalDiscount] = useState(0);
+  const [totalWithoutDis, setTotalWithoutDis] = useState(0);
   const [couponDiscount, setCouponDiscount] = useState(0);
 
   useEffect(() => {
+    const total = state.items?.reduce((accumulator, product) => {
+      return accumulator + product.price * product.quantity;
+    }, 0);
+    setTotalWithoutDis(total);
     const priceTotal = state.items?.reduce((accumulator, product) => {
       return (
         accumulator +
@@ -24,10 +29,16 @@ export const useCartCalculations = () => {
         (product.discountPercent / 100) * product.price * product.quantity
       );
     }, 0);
-    setTotalDiscount(disCountTotal)
+    setTotalDiscount(disCountTotal);
   }, [couponDiscount, state.items]);
 
-  return { cartTotal, totalDiscount, couponDiscount, setCouponDiscount };
+  return {
+    cartTotal,
+    totalDiscount,
+    couponDiscount,
+    totalWithoutDis,
+    setCouponDiscount,
+  };
 };
 
 // 100 - 10/100

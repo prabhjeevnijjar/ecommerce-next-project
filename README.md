@@ -31,6 +31,9 @@ Ecommerce application with exceptional UI
 - map() filter() reduce() Patterns
 ---
 
+
+## Product Features
+- Supports Percent and WHole number discount coupons
 ## Demo
 
 Live url of this project: [Visit](https://ecomm.prabhjeevnijjar.com/)

@@ -1,0 +1,22 @@
+[
+  {
+    "couponName": "GETAJOB10",
+    "value": 10,
+    "type": "WHOLE"
+  },
+  {
+    "couponName": "GIVEATREAT10",
+    "value": 10,
+    "type": "PERCENT"
+  },
+  {
+    "couponName": "LUCKY50",
+    "value": 50,
+    "type": "WHOLE"
+  },
+  {
+    "couponName": "HOTDEAL50",
+    "value": 50,
+    "type": "PERCENT"
+  }
+]
