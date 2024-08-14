@@ -1,15 +1,12 @@
 'use client';
 import React, { createContext, useContext, useReducer } from 'react';
 
-// Create the context
 const CartContext = createContext();
 
-// Initial state of the cart
 const initialState = {
   items: [],
 };
 
-// Reducer function to handle different actions
 const cartReducer = (state, action) => {
   switch (action.type) {
     case 'ADD_ITEM':
@@ -62,7 +59,7 @@ const cartReducer = (state, action) => {
   }
 };
 
-// Cart provider component
+// provider
 export const CartProvider = ({ children }) => {
   const [state, dispatch] = useReducer(cartReducer, initialState);
 

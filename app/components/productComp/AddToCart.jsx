@@ -7,14 +7,10 @@ import { useCart } from '../../context/CartContext';
 const AddToCart = ({ data }) => {
   const { state, dispatch } = useCart();
   const addItemToCart = () => {
-    if (state.items.length < 10) {
-      dispatch({
-        type: 'ADD_ITEM',
-        payload: { id: data.productId, title: data.title, price: data.price },
-      });
-    } else {
-      alert('Cart is full! Max 10 items allowed.');
-    }
+    dispatch({
+      type: 'ADD_ITEM',
+      payload: { id: data.productId, title: data.title, price: data.price },
+    });
   };
 
   const removeItemFromCart = () => {
@@ -32,7 +28,7 @@ const AddToCart = ({ data }) => {
   };
 
   const item = state.items.find((item) => item.id === data.productId);
-  console.log(state);
+
   return (
     <div className="flex h-[40px]">
       {item ? (

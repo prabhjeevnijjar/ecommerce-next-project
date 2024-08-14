@@ -1,7 +1,12 @@
+'use client';
 import brandLogo from '../../../public/static/images/logog.png';
 
 import Link from 'next/link';
+import { useCart } from '../../context/CartContext';
+
 const Header = () => {
+  const { state, dispatch } = useCart();
+  console.log(state.items.length);
   return (
     <div className="top-0 flex py-auto justify-between relative items-center py-[1rem] px-[2rem] md:px-[6rem]  2xl:px-[25rem] align-center ">
       <Link href="/">
@@ -41,9 +46,11 @@ const Header = () => {
                   <circle cx="19" cy="21" r="1"></circle>
                   <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
                 </svg>
-                <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-indigo-100  hover:bg-indigo-400 absolute -top-2 -right-2">
-                  3
-                </div>
+                {state.items?.length ? (
+                  <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-indigo-100  hover:bg-indigo-400 absolute -top-2 -right-2">
+                    {state.items.length}
+                  </div>
+                ) : null}
               </button>
             </Link>
           </li>
