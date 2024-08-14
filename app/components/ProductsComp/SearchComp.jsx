@@ -113,7 +113,7 @@ const Search = ({ data }) => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-8 sm:mt-[2rem] mt-[6rem] mx-auto px-auto">
           {filteredResults.map((item, index) => (
             <div
-              className="flex flex-col items-center sm:items-start sm:w-[200px] lg:w-[250px] w-[300px] mx-auto"
+              className="flex flex-col items-center sm:items-start sm:w-[200px] lg:w-[250px] w-[261px] mx-auto"
               key={index}
             >
               <Link
@@ -125,7 +125,7 @@ const Search = ({ data }) => {
               <div className="mt-2 font-inter font-semibold">{item.title}</div>
               <div className="w-full flex gap-4  mt-3 align-center items-center justify-between">
                 <div className="">
-                  <span className="text-[0.75rem] font-inter mr-1">
+                  <span className="sm:text-[1.1rem] font-inter mr-1">
                     {
                       calcDiscount(item.price, item.discountPercent || 0)
                         .discountedPrice

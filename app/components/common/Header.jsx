@@ -1,6 +1,5 @@
 'use client';
 import brandLogo from '../../../public/static/images/logog.png';
-
 import Link from 'next/link';
 import { useCart } from '../../context/CartContext';
 
@@ -12,22 +11,19 @@ const Header = () => {
       <Link href="/">
         <img src={brandLogo.src} alt="logo" />
       </Link>
-      <div className="hidden md:flex">
-        <ul className="flex gap-2 lg:gap-6 text-sm sm:text-base font-grotesk text-neutralDark ">
-          <li className="cursor-pointer  hover:text-neutral1">
+      <div className="">
+        <ul className="flex gap-4 lg:gap-6 text-sm sm:text-base font-grotesk text-neutralDark ">
+          <li className="cursor-pointer hidden sm:flex hover:text-neutral1">
             <Link href="/">Home</Link>
           </li>
           <li className="cursor-pointer hover:text-neutral1">
             <Link href="/products">Products</Link>
           </li>
-          <li className="sm:block hidden cursor-pointer hover:text-neutral1">
-            Contact
-          </li>
         </ul>
       </div>
       <div>
         <ul className="flex gap-1 lg:gap-4">
-          <li className="cursor-pointer hidden md:flex">
+          <li className="cursor-pointer">
             <Link href="/cart">
               <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2  hover:bg-accent h-10 w-10 relative">
                 <svg

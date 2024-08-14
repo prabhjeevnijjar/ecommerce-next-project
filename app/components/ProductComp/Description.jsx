@@ -63,7 +63,7 @@ const Description = ({ prodData }) => {
           <CarouselNext className="-translate-x-16 md:-translate-x-11 md:top-1/4 lg:top-1/2" />
         </Carousel>
       </div>
-      <div className="px-10 mt-10 md:mt-0">
+      <div className="sm:px-10 mt-10 md:mt-0">
         <div className="flex gap-2 ">
           <img src={rating.src} className="h-[1rem]"></img>
           <span className="font-inter text-[0.75rem] font-normal text-neutral1">

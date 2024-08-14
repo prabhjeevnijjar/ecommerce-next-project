@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 const NewArrival = () => {
   return (
-    <div className="px-[2rem]  2xl:px-[2rem] mt-8 ">
+    <div className="sm:px-[2rem]  2xl:px-[2rem] mt-8 ">
       <div className="flex justify-between mx-2 lg:mx-12">
         <div className="flex flex-col font-poppins text-[1.25rem] lg:text-[2.5rem]">
           <span className="leading-[44px]">New</span>
