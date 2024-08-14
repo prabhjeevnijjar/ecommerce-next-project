@@ -5,8 +5,8 @@ import Link from 'next/link';
 import { useCart } from '../../context/CartContext';
 
 const Header = () => {
-  const { state, dispatch } = useCart();
-  console.log(state.items.length);
+  const { state } = useCart();
+
   return (
     <div className="top-0 flex py-auto justify-between relative items-center py-[1rem] px-[2rem] md:px-[6rem]  2xl:px-[25rem] align-center ">
       <Link href="/">

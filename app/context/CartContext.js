@@ -1,5 +1,11 @@
 'use client';
 import React, { createContext, useContext, useReducer } from 'react';
+import {
+  ADD_ITEM,
+  DECREASE_QUANTITY,
+  INCREASE_QUANTITY,
+  REMOVE_ITEM,
+} from './actions';
 
 const CartContext = createContext();
 
@@ -9,7 +15,7 @@ const initialState = {
 
 const cartReducer = (state, action) => {
   switch (action.type) {
-    case 'ADD_ITEM':
+    case ADD_ITEM:
       const existingItem = state.items.find(
         (item) => item.id === action.payload.id
       );
@@ -28,13 +34,13 @@ const cartReducer = (state, action) => {
         items: [...state.items, { ...action.payload, quantity: 1 }],
       };
 
-    case 'REMOVE_ITEM':
+    case REMOVE_ITEM:
       return {
         ...state,
         items: state.items.filter((item) => item.id !== action.payload),
       };
 
-    case 'INCREASE_QUANTITY':
+    case INCREASE_QUANTITY:
       return {
         ...state,
         items: state.items.map((item) =>
@@ -44,7 +50,7 @@ const cartReducer = (state, action) => {
         ),
       };
 
-    case 'DECREASE_QUANTITY':
+    case DECREASE_QUANTITY:
       return {
         ...state,
         items: state.items.map((item) =>

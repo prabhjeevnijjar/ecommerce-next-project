@@ -23,7 +23,6 @@ import { calcDiscount } from '@/lib/utils';
 import AddToCart from './AddToCart';
 
 const Description = ({ prodData }) => {
-  console.log({ prodData });
   return (
     <div className="flex flex-col md:flex-row mt-12">
       <div className="flex align-center justify-center">
@@ -107,7 +106,7 @@ const Description = ({ prodData }) => {
             {prodData.otherDescription}
           </span>
           <div className="mt-6">
-            <AddToCart />
+          <AddToCart data={prodData} />
           </div>
         </div>
         {prodData?.faqs?.length ? (

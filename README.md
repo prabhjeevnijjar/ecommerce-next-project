@@ -18,16 +18,15 @@ Ecommerce application with exceptional UI
 - [License](#license)
 
 ---
-
-## Features
-
-- List the key features of your project.
-- For example:
-  - Server-Side Rendering (SSR)
-  - Static Site Generation (SSG)
-  - Dynamic Routing
-  - API Routes
-
+## React/JS Features used
+- useContext [Item: Add, Delete, Increment qty, Decrement Qty]
+- useReducer
+- useState
+- Server-Side Rendering (SSR)
+- Static Site Generation (SSG)
+- Dynamic Routing
+- IIFE
+- Custom hook [Add, Delete Cart Animation]
 ---
 
 ## Demo

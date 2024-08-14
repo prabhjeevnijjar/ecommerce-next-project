@@ -5,7 +5,7 @@ import toasterImg from '@/public/static/images/product-toaster.png';
 import { calcDiscount } from '@/lib/utils';
 import { Slider } from '@/components/ui/slider';
 import Link from 'next/link';
-import AddToCart from '../productComp/AddToCart';
+import AddToCart from '../ProductComp/AddToCart';
 
 const Search = ({ data }) => {
   const [searchTerm, setSearchTerm] = useState('');
