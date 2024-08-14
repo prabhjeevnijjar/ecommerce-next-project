@@ -2,6 +2,7 @@ import { Inter, Poppins, Space_Grotesk } from 'next/font/google';
 import './globals.css';
 import Header from './components/common/Header';
 import Footer from './components/common/Footer';
+import { CartProvider } from './context/CartContext';
 
 const inter = Inter({ subsets: ['latin'] });
 const space_grotesk = Space_Grotesk({
@@ -24,14 +25,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`${inter.className} ${space_grotesk.variable} ${poppins.variable}`}
-      >
-        <Header />
-        {children}
-        <Footer />
-      </body>
-    </html>
+    <CartProvider>
+      <html lang="en">
+        <body
+          className={`${inter.className} ${space_grotesk.variable} ${poppins.variable}`}
+        >
+          <Header />
+          {children}
+          <Footer />
+        </body>
+      </html>
+    </CartProvider>
   );
 }

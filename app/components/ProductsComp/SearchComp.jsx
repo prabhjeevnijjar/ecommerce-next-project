@@ -105,7 +105,8 @@ const Search = ({ data }) => {
         </div>
       </div>
       <h2 className="text-[1.2rem] mb-4">
-        Category: <span className='text-normal font-semibold'>{category || 'All'}</span>
+        Category:{' '}
+        <span className="text-normal font-semibold">{category || 'All'}</span>
       </h2>
 
       {filteredResults.length > 0 && (
@@ -115,12 +116,15 @@ const Search = ({ data }) => {
               className="flex flex-col items-center sm:items-start sm:w-[200px] lg:w-[250px] w-[300px] mx-auto"
               key={index}
             >
-              <Link href={`/product/${encodeURIComponent(item.slug)}`} className="flex justify-center w-full">
+              <Link
+                href={`/product/${encodeURIComponent(item.slug)}`}
+                className="flex justify-center w-full"
+              >
                 <img src={toasterImg.src} alt="image" loading="lazy" />
               </Link>
               <div className="mt-2 font-inter font-semibold">{item.title}</div>
               <div className="w-full flex gap-4  mt-3 align-center items-center justify-between">
-                <div className=''>
+                <div className="">
                   <span className="text-[0.75rem] font-inter mr-1">
                     {
                       calcDiscount(item.price, item.discountPercent || 0)
@@ -128,26 +132,14 @@ const Search = ({ data }) => {
                     }
                   </span>
                   <span>
-                  {item.discountPercent ? (
-                    <s className="text-neutralDark font-inter text-[0.75rem]">
-                      ${item.price}
-                    </s>
-                  ) : null}
+                    {item.discountPercent ? (
+                      <s className="text-neutralDark font-inter text-[0.75rem]">
+                        ${item.price}
+                      </s>
+                    ) : null}
                   </span>
                 </div>
-                {/* <button className="text-[0.75rem] px-4 py-1 font-inter transition ease-in duration-200 uppercase rounded-full hover:bg-gray-800 hover:text-white border-2 border-gray-900 focus:outline-none">
-                  Add
-                </button>
-                <span className="gap-3 text-[0.75rem] font-inter  uppercase border-gray-900 ">
-                  <span className="rounded-full border-2 border-gray-900 px-2 py-1  transition ease-in duration-200 hover:bg-gray-800 hover:text-white focus:outline-none ">
-                    +
-                  </span>
-                  <span className="mx-1">2</span>
-                  <span className="rounded-full border-2 border-gray-900 px-2 py-1  transition ease-in duration-200 hover:bg-gray-800 hover:text-white focus:outline-none ">
-                    +
-                  </span>
-                </span> */}
-                <AddToCart />
+                <AddToCart data={item} />
               </div>
             </div>
           ))}
