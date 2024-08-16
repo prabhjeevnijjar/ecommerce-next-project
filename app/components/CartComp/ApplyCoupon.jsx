@@ -1,10 +1,10 @@
 'use client';
 import React, { useState } from 'react';
 import coupons from '../../../data/coupons.json';
-import { useCartCalculations } from '@/app/hooks/useCartCalculations';
-const ApplyCoupon = () => {
-  const { setCouponDiscount } = useCartCalculations();
+
+const ApplyCoupon = ({ setCouponDiscount, couponDiscount }) => {
   const [value, setValue] = useState('');
+
   const onChangeHandler = (event) => {
     setValue(event.target.value);
   };
@@ -12,12 +12,11 @@ const ApplyCoupon = () => {
     const isFound = coupons.filter(
       (item) => item.couponName.toLowerCase() === value.toLowerCase()
     )[0];
-    if(isFound) {
-      setCouponDiscount(isFound)
+    if (isFound) {
+      setCouponDiscount(isFound);
     }
     console.log({ isFound });
   };
-  console.log({ value });
   return (
     <div className="w-full lg:w-2/3 my-12 mx-2">
       <div className="font-medium text-[1.25rem] leading-7 font-poppins mb-2">
@@ -55,7 +54,7 @@ const ApplyCoupon = () => {
           className="text-black font-medium focus:outline-none"
           onClick={onSubmitHandler}
         >
-          Apply
+          {couponDiscount?.length ? 'Clear' : 'Apply'}
         </button>
       </div>
     </div>

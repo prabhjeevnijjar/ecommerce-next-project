@@ -6,10 +6,11 @@ import { useCart } from '../../context/CartContext';
 import { DECREASE_QUANTITY, INCREASE_QUANTITY } from '@/app/context/actions';
 import { useCartAnimation } from '@/app/hooks/useCartAnimation';
 import CartAnimation from '../common/Animations/CartAnimation';
+import { useCartCalculations } from '@/app/hooks/useCartCalculations';
 
 const AddToCart = ({ data }) => {
   const { state, dispatch } = useCart();
-
+  const { couponDiscount, removeCoupon } = useCartCalculations();
   const { addItemToCart, deleteItemFromCart, isAdded, isDeleted } =
     useCartAnimation();
 
@@ -20,16 +21,22 @@ const AddToCart = ({ data }) => {
     price: data.price,
     image: data.image,
     slug: data.slug,
-    discountPercent: data.discountPercent
+    discountPercent: data.discountPercent,
   };
 
   const increaseQuantity = () => {
+    // If coupon Discount is applied, Remove discount coupon when inc, dec qty, customer will reapply afterwards
+    if (couponDiscount.length) removeCoupon();
+
     if (item?.quantity <= 10 - 1)
       dispatch({ type: INCREASE_QUANTITY, payload: data.productId });
     else alert('Only 10 items allowed');
   };
 
   const decreaseQuantity = () => {
+    // If coupon Discount is applied, Remove discount coupon when inc, dec qty, customer will reapply afterwards
+    if (couponDiscount.length) removeCoupon();
+
     if (item.quantity > 1)
       dispatch({ type: DECREASE_QUANTITY, payload: data.productId });
     else deleteItemFromCart(product);

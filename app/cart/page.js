@@ -19,7 +19,6 @@ const CartPage = () => {
           <Summary />
         </div>
       </div>
-      <ApplyCoupon />
     </div>
   );
 };
