@@ -83,32 +83,6 @@
     "slug": "stylish-cabinet-3"
   },
   {
-    "productId": 4,
-    "title": "Elegant Bed Frame",
-    "description": "Comfortable and stylish",
-    "price": 250,
-    "discountPercent": 25,
-    "image": "bed1.jpg",
-    "carouselImage": ["7", "8"],
-    "category": ["bedroom", "decor"],
-    "otherDescription": "Dimensions: 150x200x100",
-    "faqs": [
-      {
-        "title": "What is the frame material?",
-        "description": "The frame is made of metal with a wooden headboard."
-      },
-      {
-        "title": "Is the bed frame easy to assemble?",
-        "description": "Yes, it can be assembled in under an hour."
-      },
-      {
-        "title": "Does it come with a mattress?",
-        "description": "No, the mattress is sold separately."
-      }
-    ],
-    "slug": "elegant-bed-frame-4"
-  },
-  {
     "productId": 5,
     "title": "Cozy Rug",
     "description": "Soft and comfortable",
@@ -141,7 +115,7 @@
     "price": 60,
     "discountPercent": 8,
     "image": "clock1.jpg",
-    "carouselImage": ["1", "2"],
+    "carouselImage": ["clock1.jpg", "clock2.jpg", "clock3.jpg", "clock4.jpg"],
     "category": ["decor", "clocks"],
     "otherDescription": "Dimensions: 30x30",
     "faqs": [
@@ -192,8 +166,8 @@
     "description": "Comfortable and durable",
     "price": 120,
     "discountPercent": 18,
-    "image": "chair1.jpg",
-    "carouselImage": ["5", "6"],
+    "image": "outdoordining.jpg",
+    "carouselImage": ["outdoordining.jpg"],
     "category": ["dining", "chairs"],
     "otherDescription": "Dimensions: 45x90",
     "faqs": [
@@ -218,8 +192,13 @@
     "description": "Stylish and functional",
     "price": 110,
     "discountPercent": 14,
-    "image": "table1.jpg",
-    "carouselImage": ["7", "8"],
+    "image": "coffeetable.jpg",
+    "carouselImage": [
+      "coffeetable.jpg",
+      "coffeetable4.jpg",
+      "coffeetable2.jpg",
+      "coffeetable3.jpg"
+    ],
     "category": ["tables", "decor"],
     "otherDescription": "Dimensions: 60x120x45",
     "faqs": [
@@ -244,9 +223,14 @@
     "description": "Perfect for relaxing outdoors",
     "price": 150,
     "discountPercent": 10,
-    "image": "sofa1.jpg",
-    "carouselImage": ["9", "10"],
-    "category": ["sofa", "outdoor"],
+    "image": "loungechair.jpg",
+    "carouselImage": [
+      "loungechair.jpg",
+      "loungechair2.jpg",
+      "loungechair3.jpg",
+      "loungechair4.jpg"
+    ],
+    "category": ["sofa", "outdoor", "chairs"],
     "otherDescription": "Dimensions: 80x180x90",
     "faqs": [
       {
@@ -271,7 +255,7 @@
     "price": 180,
     "discountPercent": 20,
     "image": "table1.jpg",
-    "carouselImage": ["1", "2"],
+    "carouselImage": ["table1.jpg", "table2.jpg", "table3.jpg"],
     "category": ["dining", "tables"],
     "otherDescription": "Dimensions: 100x180x75",
     "faqs": [
@@ -297,7 +281,7 @@
     "price": 300,
     "discountPercent": 15,
     "image": "sofa2.jpg",
-    "carouselImage": ["3", "4"],
+    "carouselImage": ["sofa2.jpg", "sofa1.jpg", "sofa3.jpg", "sofa4.jpg"],
     "category": ["sofa", "living-room"],
     "otherDescription": "Dimensions: 90x200x85",
     "faqs": [
@@ -322,8 +306,13 @@
     "description": "Sleek and functional",
     "price": 100,
     "discountPercent": 10,
-    "image": "bookcase1.jpg",
-    "carouselImage": ["5", "6"],
+    "image": "bookshelf1.jpg",
+    "carouselImage": [
+      "bookshelf1.jpg",
+      "bookshelf2.jpg",
+      "bookshelf3.jpg",
+      "bookshelf4.jpg"
+    ],
     "category": ["cabinet", "decor"],
     "otherDescription": "Dimensions: 80x180x30",
     "faqs": [
@@ -349,7 +338,7 @@
     "price": 200,
     "discountPercent": 15,
     "image": "desk1.jpg",
-    "carouselImage": ["7", "8"],
+    "carouselImage": ["desk1.jpg", "desk2.jpg", "desk3.jpg", "desk4.jpg"],
     "category": ["tables", "decor"],
     "otherDescription": "Dimensions: 120x60x75",
     "faqs": [
@@ -374,8 +363,13 @@
     "description": "Perfect for relaxing",
     "price": 120,
     "discountPercent": 10,
-    "image": "armchair1.jpg",
-    "carouselImage": ["9", "10"],
+    "image": "armchair.jpg",
+    "carouselImage": [
+      "armchair.jpg",
+      "armchair2.jpg",
+      "armchair3.jpg",
+      "armchair4.jpg"
+    ],
     "category": ["sofa", "living-room"],
     "otherDescription": "Dimensions: 80x80x90",
     "faqs": [
@@ -401,7 +395,12 @@
     "price": 100,
     "discountPercent": 5,
     "image": "mirror1.jpg",
-    "carouselImage": ["1", "2"],
+    "carouselImage": [
+      "mirror1.jpg",
+      "mirror2.jpg",
+      "mirror3.jpg",
+      "mirror4.jpg"
+    ],
     "category": ["decor", "bedroom"],
     "otherDescription": "Dimensions: 60x90",
     "faqs": [
@@ -457,8 +456,8 @@
     "description": "Comfortable and stylish",
     "price": 150,
     "discountPercent": 20,
-    "image": "chair2.jpg",
-    "carouselImage": ["5", "6"],
+    "image": "dining_table_4.jpg",
+    "carouselImage": ["dining_table_4.jpg"],
     "category": ["dining", "chairs"],
     "otherDescription": "Dimensions: 50x100x50",
     "faqs": [
@@ -483,8 +482,8 @@
     "description": "Stylish and functional",
     "price": 130,
     "discountPercent": 18,
-    "image": "bookcase2.jpg",
-    "carouselImage": ["7", "8"],
+    "image": "bookshelf2.jpg",
+    "carouselImage": ["bookshelf2.jpg", "bookshelf3.jpg"],
     "category": ["cabinet", "decor"],
     "otherDescription": "Dimensions: 90x180x40",
     "faqs": [
@@ -509,8 +508,8 @@
     "description": "Perfect for your home office",
     "price": 220,
     "discountPercent": 15,
-    "image": "desk2.jpg",
-    "carouselImage": ["1", "2"],
+    "image": "desk4.jpg",
+    "carouselImage": ["desk4.jpg", "desk3.jpg"],
     "category": ["tables", "office"],
     "otherDescription": "Dimensions: 140x70x75",
     "faqs": [
@@ -535,8 +534,13 @@
     "description": "Perfect for your garden or patio",
     "price": 350,
     "discountPercent": 20,
-    "image": "outdoor1.jpg",
-    "carouselImage": ["3", "4"],
+    "image": "outdoordining.jpg",
+    "carouselImage": [
+      "outdoordining.jpg",
+      "outdoordining3.jpg",
+      "outdoordining2.jpg",
+      "outdoordining4.jpg"
+    ],
     "category": ["outdoor", "dining"],
     "otherDescription": "Dimensions: Table 120x80x75, Chairs 50x90x50",
     "faqs": [
@@ -561,8 +565,8 @@
     "description": "Spacious and comfortable",
     "price": 500,
     "discountPercent": 10,
-    "image": "sofa3.jpg",
-    "carouselImage": ["5", "6"],
+    "image": "sofa1.jpg",
+    "carouselImage": ["sofa1.jpg", "sofa2.jpg", "sofa3.jpg", "sofa4.jpg"],
     "category": ["sofa", "living-room"],
     "otherDescription": "Dimensions: 200x300x90",
     "faqs": [
@@ -587,8 +591,13 @@
     "description": "Fun and functional",
     "price": 300,
     "discountPercent": 15,
-    "image": "bed2.jpg",
-    "carouselImage": ["7", "8"],
+    "image": "bunkbed.jpg",
+    "carouselImage": [
+      "bunkbed.jpg",
+      "bunkbed2.jpg",
+      "bunkbed3.jpg",
+      "bunkbed4.jpg"
+    ],
     "category": ["bedroom", "kids"],
     "otherDescription": "Dimensions: 90x200x150",
     "faqs": [
@@ -639,8 +648,8 @@
     "description": "Comfortable and stylish",
     "price": 400,
     "discountPercent": 18,
-    "image": "outdoor2.jpg",
-    "carouselImage": ["1", "2"],
+    "image": "loungechair4.jpg",
+    "carouselImage": ["loungechair4.jpg", "loungechair3.jpg"],
     "category": ["sofa", "outdoor"],
     "otherDescription": "Dimensions: 180x200x90",
     "faqs": [
@@ -717,8 +726,12 @@
     "description": "Stylish and durable",
     "price": 250,
     "discountPercent": 20,
-    "image": "outdoor3.jpg",
-    "carouselImage": ["7", "8"],
+    "image": "outdoordining.jpg",
+    "carouselImage": [
+      "outdoordining2.jpg",
+      "outdoordining3.jpg",
+      "outdoordining4.jpg"
+    ],
     "category": ["outdoor", "chairs"],
     "otherDescription": "Dimensions: 55x90x50",
     "faqs": [
@@ -738,39 +751,18 @@
     "slug": "outdoor-dining-chair-set-28"
   },
   {
-    "productId": 29,
-    "title": "Classic Bed Frame",
-    "description": "Elegant and timeless design",
-    "price": 300,
-    "discountPercent": 12,
-    "image": "bed3.jpg",
-    "carouselImage": ["9", "10"],
-    "category": ["bedroom", "decor"],
-    "otherDescription": "Dimensions: 160x200x100",
-    "faqs": [
-      {
-        "title": "Is the frame made of solid wood?",
-        "description": "Yes, the frame is made of solid oak wood."
-      },
-      {
-        "title": "Does it include a headboard?",
-        "description": "Yes, the headboard is included."
-      },
-      {
-        "title": "Is assembly required?",
-        "description": "Yes, assembly is required."
-      }
-    ],
-    "slug": "classic-bed-frame-29"
-  },
-  {
     "productId": 30,
     "title": "Modern Nightstand",
     "description": "Sleek and functional",
     "price": 80,
     "discountPercent": 8,
-    "image": "nightstand1.jpg",
-    "carouselImage": ["1", "2"],
+    "image": "nightstand.jpg",
+    "carouselImage": [
+      "nightstand.jpg",
+      "nightstand2.jpg",
+      "nightstand3.jpg",
+      "nightstand4.jpg"
+    ],
     "category": ["bedroom", "decor"],
     "otherDescription": "Dimensions: 40x50x45",
     "faqs": [
@@ -790,39 +782,13 @@
     "slug": "modern-nightstand-30"
   },
   {
-    "productId": 31,
-    "title": "Cozy Loveseat",
-    "description": "Comfortable and stylish",
-    "price": 250,
-    "discountPercent": 15,
-    "image": "loveseat1.jpg",
-    "carouselImage": ["3", "4"],
-    "category": ["sofa", "living-room"],
-    "otherDescription": "Dimensions: 150x85x90",
-    "faqs": [
-      {
-        "title": "Does it come in different colors?",
-        "description": "Yes, it is available in grey, blue, and beige."
-      },
-      {
-        "title": "Is the fabric removable?",
-        "description": "Yes, the covers can be removed for washing."
-      },
-      {
-        "title": "Is it easy to assemble?",
-        "description": "Yes, the loveseat can be assembled in under an hour."
-      }
-    ],
-    "slug": "cozy-loveseat-31"
-  },
-  {
     "productId": 32,
     "title": "Decorative Wall Shelf",
     "description": "Sleek and functional",
     "price": 60,
     "discountPercent": 10,
-    "image": "shelf1.jpg",
-    "carouselImage": ["5", "6"],
+    "image": "bookshelf3.jpg",
+    "carouselImage": ["bookshelf3.jpg", "bookshelf4.jpg"],
     "category": ["decor", "shelves"],
     "otherDescription": "Dimensions: 60x20x10",
     "faqs": [

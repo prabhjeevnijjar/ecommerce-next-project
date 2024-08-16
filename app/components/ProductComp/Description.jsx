@@ -68,7 +68,7 @@ const Description = ({ prodData }) => {
           </div>
           <div className="flex gap-4  mt-3 lg:mt-6 align-center">
             <span className="text-[1.75rem] font-poppins">
-              {
+              ${
                 calcDiscount(prodData.price, prodData.discountPercent || 0)
                   .discountedPrice
               }

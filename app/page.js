@@ -6,6 +6,11 @@ import Sale from './components/HomeComp/Sale';
 import Support from './components/HomeComp/Support';
 import Newsletter from './components/common/Newsletter';
 
+export const metadata = {
+  openGraph: {
+    images: '/opengraph-image.png',
+  },
+};
 const HomePage = () => {
   return (
     <>
