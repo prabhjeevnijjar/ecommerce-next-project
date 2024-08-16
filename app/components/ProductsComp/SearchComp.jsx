@@ -10,7 +10,7 @@ import AddToCart from '../ProductComp/AddToCart';
 const Search = ({ data }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [category, setCategory] = useState('');
-  const [price, setPrice] = useState('');
+  const [price, setPrice] = useState(1000);
   const [filteredResults, setFilteredResults] = useState(data);
 
   const handleSearch = () => {
@@ -48,8 +48,9 @@ const Search = ({ data }) => {
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />
+      <div>
       <div className="flex sm:flex-row flex-col justify-between h-[34px] gap-4 mb-10 mt-9 sm:mt-3">
-        <div className="flex flex-col gap-2 w-full sm:w-[50%]">
+        <div className="flex flex-col gap-2 w-full sm:w-[30%]">
           <label>Max Price: {price || 0}</label>
           <Slider
             defaultValue={[33]}
@@ -104,11 +105,11 @@ const Search = ({ data }) => {
           </button>
         </div>
       </div>
-      <h2 className="text-[1.2rem] mb-4">
+      <h2 className="text-[1.2rem] mb-4 mt-[5rem] sm:mt-3">
         Category:{' '}
         <span className="text-normal font-semibold">{category || 'All'}</span>
       </h2>
-
+      </div>
       {filteredResults.length > 0 && (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-8 sm:mt-[2rem] mt-[6rem] mx-auto px-auto">
           {filteredResults.map((item, index) => (
@@ -126,7 +127,7 @@ const Search = ({ data }) => {
               <div className="w-full flex gap-4  mt-3 align-center items-center justify-between">
                 <div className="">
                   <span className="sm:text-[1.1rem] font-inter mr-1">
-                    {
+                    ${
                       calcDiscount(item.price, item.discountPercent || 0)
                         .discountedPrice
                     }
