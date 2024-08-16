@@ -2,8 +2,16 @@ import React from 'react';
 import ProductsD from '../components/CartComp/ProductsD';
 import ProductsM from '../components/CartComp/ProductsM';
 import Summary from '../components/CartComp/Summary';
-import ApplyCoupon from '../components/CartComp/ApplyCoupon';
+import { baseUrl } from '@/lib/constants';
+export const metadata = {
+  metadataBase: new URL(baseUrl),
 
+  title: 'Cart page - Furniture',
+  description: 'This is the Cart page Furniture E-Comm.',
+  keywords: 'Cart, products, Ecomm website, Furniture',
+  author: 'PSN',
+  ogImage: '../opengraph-image.png',
+};
 const CartPage = () => {
   return (
     <div className="px-[2rem] md:px-[6rem]  2xl:px-[25rem]">

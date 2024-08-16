@@ -5,12 +5,18 @@ import NewArrival from './components/common/NewArrival';
 import Sale from './components/HomeComp/Sale';
 import Support from './components/HomeComp/Support';
 import Newsletter from './components/common/Newsletter';
+import { baseUrl } from '@/lib/constants';
 
 export const metadata = {
-  openGraph: {
-    images: '/opengraph-image.png',
-  },
+  metadataBase: new URL(baseUrl),
+
+  title: 'Homepage - Furniture',
+  description: 'This is the Home page Furniture E-Comm.',
+  keywords: 'Home, products, Ecomm website, Furniture',
+  author: 'PSN',
+  ogImage: '/opengraph-image.png',
 };
+
 const HomePage = () => {
   return (
     <>
