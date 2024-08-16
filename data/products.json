@@ -6,7 +6,7 @@
     "price": 100,
     "discountPercent": 10,
     "image": "sofa1.jpg",
-    "carouselImage": ["1", "2"],
+    "carouselImage": ["sofa1.jpg", "sofa2.jpg", "sofa3.jpg", "sofa4.jpg"],
     "category": ["sofa", "dining", "decor"],
     "otherDescription": "Dimensions: 85x200x100",
     "faqs": [
@@ -31,8 +31,8 @@
     "description": "Stylish and functional",
     "price": 200,
     "discountPercent": 15,
-    "image": "dining1.jpg",
-    "carouselImage": ["3", "4"],
+    "image": "dining_table_4.jpg",
+    "carouselImage": ["dining_table_4.jpg"],
     "category": ["dining", "tables"],
     "otherDescription": "Dimensions: 100x180x75",
     "faqs": [
@@ -57,8 +57,13 @@
     "description": "Perfect for storage",
     "price": 150,
     "discountPercent": 20,
-    "image": "cabinet1.jpg",
-    "carouselImage": ["5", "6"],
+    "image": "cabinet.jpg",
+    "carouselImage": [
+      "cabinet.jpg",
+      "cabinet2.jpg",
+      "cabinet3.jpg",
+      "cabinet4.jpg"
+    ],
     "category": ["cabinet", "decor"],
     "otherDescription": "Dimensions: 90x120x40",
     "faqs": [
@@ -110,7 +115,7 @@
     "price": 80,
     "discountPercent": 5,
     "image": "rug1.jpg",
-    "carouselImage": ["9", "10"],
+    "carouselImage": ["rug1.jpg", "rug2.jpg", "rug3.jpg", "rug4.jpg"],
     "category": ["rugs", "decor"],
     "otherDescription": "Dimensions: 200x300",
     "faqs": [
@@ -162,7 +167,7 @@
     "price": 50,
     "discountPercent": 12,
     "image": "lamp1.jpg",
-    "carouselImage": ["3", "4"],
+    "carouselImage": ["lamp1.jpg", "lamp2.jpg", "lamp3.jpg", "lamp4.jpg"],
     "category": ["decor", "lamps"],
     "otherDescription": "Dimensions: 15x50",
     "faqs": [
@@ -421,8 +426,13 @@
     "description": "Stylish and energy-efficient",
     "price": 80,
     "discountPercent": 12,
-    "image": "lamp2.jpg",
-    "carouselImage": ["3", "4"],
+    "image": "ceilinglamp1.jpg",
+    "carouselImage": [
+      "ceilinglamp1.jpg",
+      "celilinglamp2.jpg",
+      "celilinglamp3.jpg",
+      "celilinglamp4.jpg"
+    ],
     "category": ["lamps", "decor"],
     "otherDescription": "Dimensions: 50x50x20",
     "faqs": [
@@ -682,7 +692,7 @@
     "price": 70,
     "discountPercent": 10,
     "image": "lamp3.jpg",
-    "carouselImage": ["5", "6"],
+    "carouselImage": ["lamp3.jpg", "lamp3.jpg", "lapm4.jpg"],
     "category": ["lamps", "decor"],
     "otherDescription": "Dimensions: 25x150",
     "faqs": [

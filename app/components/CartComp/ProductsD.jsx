@@ -40,9 +40,9 @@ const ProductsD = () => {
             return (
               <TableRow key={index}>
                 <TableCell className="font-medium flex gap-2 ">
-                  <div className="w-38 h-38">
+                  <div className="w-[100px]">
                     <img
-                      src={item.image}
+                      src={'/static/images/' + item.image}
                       alt="product img"
                       className="w-full h-full object-cover rounded-lg"
                     />

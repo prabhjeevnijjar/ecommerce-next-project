@@ -5,8 +5,8 @@ const Banner = () => {
   return (
     <div className=" px-[2rem] md:px-[6rem]  2xl:px-[25rem] align-center ">
       <div className="">
-        <img className="hidden xs:block" src={deskBanner.src}></img>
-        <img className="block xs:hidden" src={mobBanner.src}></img>
+        <img className="hidden xs:block" src={deskBanner.src} alt="home banner"></img>
+        <img className="block xs:hidden" src={mobBanner.src} alt ="homebanner mobile"></img>
       </div>
       <div className="flex flex-col sm:flex-row mt-3 sm:mt-9">
         <div className="flex-col font-poppins sm:w-1/2 w-screen ">

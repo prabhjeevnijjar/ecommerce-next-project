@@ -20,9 +20,9 @@ const ProductsM = () => {
         return (
           <div className="flex flex-row justify-between px-2 py-4" key={index}>
             <div className="flex flex-row gap-4">
-              <div className="w-38 h-38">
+              <div className="w-[88px]">
                 <img
-                  src={item.image}
+                  src={'/static/images/' + item.image}
                   alt="product img"
                   className="w-full h-full object-cover rounded-lg"
                 />

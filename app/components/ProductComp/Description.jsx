@@ -28,36 +28,17 @@ const Description = ({ prodData }) => {
       <div className="flex align-center justify-center">
         <Carousel className="max-w-xs md:max-w-md max-h-[20rem]">
           <CarouselContent>
-            <CarouselItem key={1}>
-              <div className="flex aspect-square items-center justify-center">
-                <img src={productImg.src} />
-              </div>
-            </CarouselItem>
-            <CarouselItem key={2}>
-              <div className="flex aspect-square items-center justify-center">
-                <img src={productImg2.src} />
-              </div>
-            </CarouselItem>
-            <CarouselItem key={3}>
-              <div className="flex aspect-square items-center justify-center">
-                <img src={productImg3.src} />
-              </div>
-            </CarouselItem>
-            <CarouselItem key={4}>
-              <div className="flex aspect-square items-center justify-center">
-                <img src={productImg4.src} />
-              </div>
-            </CarouselItem>
-            <CarouselItem key={2}>
-              <div className="flex aspect-square items-center justify-center">
-                <img src={productImg5.src} />
-              </div>
-            </CarouselItem>
-            <CarouselItem key={5}>
-              <div className="flex aspect-square items-center justify-center">
-                <img src={productImg6.src} />
-              </div>
-            </CarouselItem>
+            {prodData.carouselImage.map((item, index) => (
+              <CarouselItem key={index}>
+                <div className="flex aspect-square items-center justify-center">
+                  <img
+                    src={'/static/images/' + item}
+                    alt={index + 'carousel item'}
+                    className="w-[180px] md:w-[280px]"
+                  />
+                </div>
+              </CarouselItem>
+            ))}
           </CarouselContent>
           <CarouselPrevious className="translate-x-16 md:translate-x-11 md:top-1/4 lg:top-1/2" />
           <CarouselNext className="-translate-x-16 md:-translate-x-11 md:top-1/4 lg:top-1/2" />
@@ -67,7 +48,7 @@ const Description = ({ prodData }) => {
         <div className="flex gap-2 ">
           <img src={rating.src} className="h-[1rem]"></img>
           <span className="font-inter text-[0.75rem] font-normal text-neutral1">
-            11 reviews
+            {Math.floor(Math.random() * 100) + 1} reviews
           </span>
         </div>
         <div className="flex flex-col">
@@ -106,7 +87,7 @@ const Description = ({ prodData }) => {
             {prodData.otherDescription}
           </span>
           <div className="mt-6">
-          <AddToCart data={prodData} />
+            <AddToCart data={prodData} />
           </div>
         </div>
         {prodData?.faqs?.length ? (
