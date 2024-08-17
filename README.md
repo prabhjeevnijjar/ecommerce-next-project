@@ -11,11 +11,9 @@ Ecommerce application with exceptional UI and Dynamic products, discount and cou
 - [Features](#features)
 - [Demo](#demo)
 - [Installation](#installation)
-- [Usage](#usage)
+- [Prerequisites](#prerequisites)
 - [Technologies Used](#technologies-used)
-- [Folder Structure](#folder-structure)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ---
 ## React/JS Features used
@@ -45,9 +43,26 @@ Ecommerce application with exceptional UI and Dynamic products, discount and cou
 
 Live urls of this project:
 - [Homepage](https://ecommerce-next-project-green.vercel.app/)
-- [Productspage](https://ecommerce-next-project-green.vercel.app/products)
-- [Productpage] (https://ecommerce-next-project-green.vercel.app/product/modern-floor-lamp-27)
-- [Cartpage] (https://ecommerce-next-project-green.vercel.app/cart)
+- [Products page](https://ecommerce-next-project-green.vercel.app/products)
+- [Product page](https://ecommerce-next-project-green.vercel.app/product/modern-floor-lamp-27)
+- [Cart page](https://ecommerce-next-project-green.vercel.app/cart)
+
+---
+## Technologies Used
+
+- React
+- NextJs
+- Tailwind CSS
+- Shadcn UI
+- useContext
+- JSON
+- Vercel Deployment
+
+---
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (Ensure you have Node.js installed)
+- [Yarn](https://yarnpkg.com/) or npm (Either is fine)
 
 ---
 
@@ -60,15 +75,3 @@ npm run dev
 Visit -> http://localhost:3000
 
 ```
-
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) (Ensure you have Node.js installed)
-- [Yarn](https://yarnpkg.com/) or npm (Either is fine)
-
-### Steps
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/prabhjeevnijjar/ecommerce-next-project.git
-   ```
