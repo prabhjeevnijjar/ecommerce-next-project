@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import coupons from '../../../data/coupons.json';
+import CopyCouponCode from './CopyCouponCode';
 
 const ApplyCoupon = ({ setCouponDiscount, couponDiscount }) => {
   const [value, setValue] = useState('');
@@ -60,6 +61,9 @@ const ApplyCoupon = ({ setCouponDiscount, couponDiscount }) => {
           {couponDiscount.value ? 'Clear' : 'Apply'}
         </button>
       </div>
+      {coupons.map((item, index) => (
+        <CopyCouponCode key={index} couponCode={item.couponName} />
+      ))}
     </div>
   );
 };

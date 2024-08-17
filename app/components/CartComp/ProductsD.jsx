@@ -107,7 +107,7 @@ const ProductsD = () => {
                       </div>
                     ) : null}
                   </div>
-                  <div className=" text-[1.11rem]">
+                  <div className=" text-[1.21rem] px-3 pb-3">
                     $
                     {
                       calcDiscount(
