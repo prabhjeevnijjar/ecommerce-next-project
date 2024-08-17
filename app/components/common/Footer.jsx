@@ -25,10 +25,7 @@ const Footer = () => {
       </div>
       <div className="mt-10">
         <ul className="flex gap-2 lg:gap-6 font-inter text-[0.75rem] text-white ">
-          <li className="cursor-pointer ">
-            Copyright @2024 | Singhularity labs | Prabhjeev Singh
-          </li>
-
+          <li className="cursor-pointer ">Copyright @2024 | Prabhjeev Singh</li>
           <li className="cursor-pointer ">Privacy</li>
           <li className="cursor-pointer">Terms of use</li>
         </ul>

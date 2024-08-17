@@ -2,7 +2,7 @@
 
 ## Overview
 
-Ecommerce application with exceptional UI
+Ecommerce application with exceptional UI and Dynamic products, discount and coupon system
 
 ---
 
@@ -33,14 +33,33 @@ Ecommerce application with exceptional UI
 
 
 ## Product Features
-- Supports Percent and WHole number discount coupons
+- Home Page
+- Product Page
+- All Products Page [with filters]
+- Cart Page
+- Dynamic Coupon system
+- Add To Cart [persistant across all pages]
+- Dynamic Discount system
+
 ## Demo
 
-Live url of this project: [Visit](https://ecomm.prabhjeevnijjar.com/)
+Live urls of this project:
+- [Homepage](https://ecommerce-next-project-green.vercel.app/)
+- [Productspage](https://ecommerce-next-project-green.vercel.app/products)
+- [Productpage] (https://ecommerce-next-project-green.vercel.app/product/modern-floor-lamp-27)
+- [Cartpage] (https://ecommerce-next-project-green.vercel.app/cart)
 
 ---
 
 ## Installation
+```
+git clone https://github.com/prabhjeevnijjar/ecommerce-next-project.git
+cd ecommerce-next-project
+npm install
+npm run dev
+Visit -> http://localhost:3000
+
+```
 
 ### Prerequisites
 
