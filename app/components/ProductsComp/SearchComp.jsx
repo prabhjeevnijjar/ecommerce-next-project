@@ -11,7 +11,7 @@ const Search = ({ data }) => {
   const searchParams = useSearchParams();
 
   const search = searchParams.get('category');
-  console.log({ search });
+
   const [searchTerm, setSearchTerm] = useState('');
   const [category, setCategory] = useState(search ? search : '');
   const [price, setPrice] = useState(1000);

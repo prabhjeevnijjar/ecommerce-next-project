@@ -54,7 +54,7 @@ const Summary = () => {
         <div className="flex flex-row justify-between">
           <span className="font-inter font-semibold  text-[1.25rem]">Pay</span>
           <span className="font-inter font-semibold text-[1.25rem]">
-            ${cartTotal - couponValue}
+            ${Math.floor(cartTotal - couponValue)}
           </span>
         </div>
       </div>
