@@ -99,15 +99,15 @@ const ProductsD = () => {
                     </span>
                   </div>
                 </TableCell>
-                <TableCell className="text-right font-semibold flex flex-col py-0 gap-4 align-bottom px-0">
-                  <div className="flex flex-row justify-end">
+                <TableCell className="text-right font-semibold flex flex-col py-0 gap-4 align-top px-0">
+                  <div className="flex flex-ro justify-end">
                     {item.discountPercent ? (
                       <div className="border-white bg-green-500 text-white rounded-md px-1 py-1 text-center w-[80px] text-sm">
                         {item.discountPercent}% OFF
                       </div>
                     ) : null}
                   </div>
-                  <span className=" text-[1.11rem]">
+                  <div className=" text-[1.11rem]">
                     $
                     {
                       calcDiscount(
@@ -116,7 +116,7 @@ const ProductsD = () => {
                         item.quantity
                       ).discountedPricexQty
                     }
-                  </span>
+                  </div>
                 </TableCell>
               </TableRow>
             );

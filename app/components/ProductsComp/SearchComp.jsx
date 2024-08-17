@@ -1,14 +1,19 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import categories from '@/data/categories.json';
 import { calcDiscount } from '@/lib/utils';
 import { Slider } from '@/components/ui/slider';
 import Link from 'next/link';
 import AddToCart from '../ProductComp/AddToCart';
+import { useSearchParams } from 'next/navigation';
 
 const Search = ({ data }) => {
+  const searchParams = useSearchParams();
+
+  const search = searchParams.get('category');
+  console.log({ search });
   const [searchTerm, setSearchTerm] = useState('');
-  const [category, setCategory] = useState('');
+  const [category, setCategory] = useState(search ? search : '');
   const [price, setPrice] = useState(1000);
   const [filteredResults, setFilteredResults] = useState(data);
 
@@ -29,6 +34,11 @@ const Search = ({ data }) => {
 
     setFilteredResults(results);
   };
+
+  useEffect(() => {
+    // runs when user comes from homepage categoryies
+    if (search) handleSearch();
+  }, []);
 
   const handleClear = () => {
     setSearchTerm('');
@@ -121,7 +131,7 @@ const Search = ({ data }) => {
                 className="flex justify-center w-full"
               >
                 <img
-                  src={"/static/images/" + item.image}
+                  src={'/static/images/' + item.image}
                   alt="image"
                   loading="lazy"
                 />

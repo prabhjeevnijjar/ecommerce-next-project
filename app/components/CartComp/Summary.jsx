@@ -1,6 +1,6 @@
 'use client';
-import { useCartCalculations } from '@/app/hooks/useCartCalculations';
 import React from 'react';
+import { useCartCalculations } from '@/app/hooks/useCartCalculations';
 import ApplyCoupon from './ApplyCoupon';
 
 const Summary = () => {
@@ -33,19 +33,19 @@ const Summary = () => {
             </span>
           </div>
         ) : null}
-        {couponDiscount?.length ? (
+        {couponDiscount.value ? (
           <div className="flex flex-row justify-between mt-2">
             <span className="font-inter">
               Coupon (
               <span className="font-inter font-semibold">
-                {couponDiscount[0].couponName}
+                {couponDiscount.couponName}
               </span>
               )
             </span>
             <span className="border-white bg-yellow-500 text-white rounded-md px-1 py-1 text-center w-[60px] text-sm font-semibold ">
               -
-              {`${couponDiscount[0].type === 'PERCENT' ? '%' : '$'}${
-                couponDiscount[0].value
+              {`${couponDiscount.type === 'PERCENT' ? '%' : '$'}${
+                couponDiscount.value
               } `}
             </span>
           </div>

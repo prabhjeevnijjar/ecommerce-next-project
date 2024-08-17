@@ -5,18 +5,21 @@ import coupons from '../../../data/coupons.json';
 const ApplyCoupon = ({ setCouponDiscount, couponDiscount }) => {
   const [value, setValue] = useState('');
 
-  const onChangeHandler = (event) => {
-    setValue(event.target.value);
-  };
+  const onChangeHandler = (event) => setValue(event.target.value);
+
   const onSubmitHandler = () => {
-    const isFound = coupons.filter(
-      (item) => item.couponName.toLowerCase() === value.toLowerCase()
-    )[0];
-    if (isFound) {
-      setCouponDiscount(isFound);
+    if (couponDiscount.value) {
+      // clear the value if user clicks on clear and value is already present
+      setCouponDiscount({});
+      setValue('');
+    } else {
+      const isFound = coupons.filter(
+        (item) => item.couponName.toLowerCase() === value.toLowerCase()
+      )[0];
+      if (isFound) setCouponDiscount(isFound);
     }
-    console.log({ isFound });
   };
+
   return (
     <div className="w-full lg:w-2/3 my-12 mx-2">
       <div className="font-medium text-[1.25rem] leading-7 font-poppins mb-2">
@@ -45,7 +48,7 @@ const ApplyCoupon = ({ setCouponDiscount, couponDiscount }) => {
             value={value}
             type="text"
             placeholder="Coupon Code"
-            className="px-2 py-1 text-gray-600 border-none focus:outline-none w-100"
+            className="px-2 py-1 text-gray-600 border-none focus:outline-none w-full"
             onChange={onChangeHandler}
           />
         </div>
@@ -54,7 +57,7 @@ const ApplyCoupon = ({ setCouponDiscount, couponDiscount }) => {
           className="text-black font-medium focus:outline-none"
           onClick={onSubmitHandler}
         >
-          {couponDiscount?.length ? 'Clear' : 'Apply'}
+          {couponDiscount.value ? 'Clear' : 'Apply'}
         </button>
       </div>
     </div>
